@@ -15,8 +15,13 @@ app.use(cors())
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
 
+// app.get('/', (req, res) => {
+//     res.send('Hello World')
+// })
+
 const server = () => {
     db()
+     //console.log('DB connected less go');
     app.listen(PORT, () => {
         console.log('listening to port:', PORT)
     })

@@ -1,6 +1,6 @@
 const IncomeSchema= require("../models/IncomeModel")
 
-
+//creating income layout
 exports.addIncome = async (req, res) => {
     const {title, amount, category, description, date}  = req.body
 

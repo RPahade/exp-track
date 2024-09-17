@@ -1,3 +1,4 @@
+//cors is used to connect frontend with external backend
 import React, {useState, useMemo} from 'react'
 import styled from "styled-components";
 import bg from './img/bg.png'
@@ -35,6 +36,7 @@ function App() {
   },[])
 
   return (
+    //styling the page
     <AppStyled bg={bg} className="App">
       {orbMemo}
       <MainLayout>
